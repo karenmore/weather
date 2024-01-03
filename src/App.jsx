@@ -25,7 +25,7 @@ function App() {
   useEffect(() => {
     setIsLoading(true)
     navigator.geolocation.getCurrentPosition(success, (e) => {
-      setError('Para ver el clima de tu localidad debes habilitar la ubicacion, desde la barra de navegacion');
+      setError('To see the weather in your location you must enable the location, from the navigation bar');
       setIsLoading(false);
     })
   }, [])
